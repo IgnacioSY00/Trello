@@ -1,0 +1,213 @@
+/* Solo si para páginas fullscreen sin barra de desplamiento */
+html, body {
+    height: 100%;
+}
+
+/* Definición de la fuente local */
+@font-face {
+    font-family: "roboto";
+    src: url(/font/roboto.woff2);
+}
+
+/* Tamaño de la caja de borde a borde 
+padding y borde no modifica el tamaño del elemento */
+* {
+    box-sizing: border-box;
+}
+
+/* Reglas comunes a todos los elementos en body 
+margin:0 para quitar ese pequeño enmarcado blanco indeseable */
+body {
+    margin: 0;
+    background-image: url(../img/trello-left.svg), url(../img/trello-right.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-size: 368px, 368px;
+    background-position: left bottom, right bottom;
+    font-family: "roboto";
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+}
+
+main {
+    width: 400px;
+    margin: 0px auto;
+    padding: 32px 40px;
+    background-color: white;
+}
+
+footer {  
+}
+
+/* flex orientación row */
+.row {
+    display: flex;
+}
+/* flex orientación column */
+.column {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    height: 90%;
+    width: 100%;
+    align-items: center;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1)
+    
+}
+
+/* Alineación eje principal center */
+.justify-content-center {
+    justify-content: center;
+}
+
+/* Alineación eje principal space beetween 
+si row = 1º y ultimo en izq y der resto reparten espacio
+si column =  1º y ultimo en arriba y abajo resto reparten espacio */
+.justify-content-between {
+    justify-content: space-between;
+}
+
+/* Alineación eje principal end
+si row = derecha
+si column = abajo */
+.justify-content-end {
+    justify-content: end;
+}
+
+/* Alineación eje secundario center 
+si row = centrado verticalmente
+si column = centrado horizontalmente */
+.align-items-center {
+    align-items: center;
+}
+
+.col-50 {
+    width: 50%;
+}
+
+.w-100 {
+    width: 100%;
+}
+.w-30{
+    width: 38%;
+}
+
+.h-100 {
+    height: 100%;
+}
+
+/* Flotación */
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+/* limpiar flotación */
+.cb {
+    clear: both;
+}
+
+/* Position */
+.position-absolute {
+    position: absolute;
+}
+
+.position-relative {
+    position: relative;
+}
+
+/* Alineación del Texto centro */
+.text-center {
+    text-align: center;
+}
+
+/* Alineación del Texto derecha */
+.text-end {
+    text-align: end;
+}
+
+/* Fondo y texto negro y blanco */
+.bg-dark {
+    background-color: black;
+}
+
+.text-dark {
+    color: black;
+}
+
+.bg-light {
+    background-color: white;
+}
+
+.text-light {
+    color: white;
+}
+
+/* Reglas comunes botones */
+.btn {
+    border: solid 1px rgb(216,216,216);
+    width: 300px;
+    padding: 10px;
+    font-size: 18px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+/* Reglas específicas botón azul */
+.btn-blue {
+    background-color: #0049b6;
+    color: #ffffff;
+}
+
+/* Reglas para las cajas de formularios */
+.box-form {
+    border: 0;
+    background-color: #e6e7e8;
+    width: 70%;
+    padding: 12px;
+    border-radius: 20px;
+    font-size: 16px;
+}
+.logo{
+    margin: 30px;
+}
+h3{
+    padding: 0;
+    margin: 0;
+}
+.atl{
+    margin: 20px;
+}
+.lg{
+    display: flex;
+    width: 10%;
+    margin-right:10px;
+    padding: px;
+    text-align: center;
+    align-items: center;
+    
+}
+.r{
+    display: flex;
+    font-size: 100%;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+}
+.email{
+    border-color: blue;
+    border-width: 2px;
+}
